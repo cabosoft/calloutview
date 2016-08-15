@@ -487,6 +487,7 @@
     UIImageView *leftCap, *rightCap, *topAnchor, *bottomAnchor, *leftBackground, *rightBackground;
 }
 
+
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         leftCap = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 17, 57)];
@@ -505,11 +506,26 @@
     return self;
 }
 
-- (UIImage *)leftCapImage { return _leftCapImage ? _leftCapImage : [[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewLeftCap"] stretchableImageWithLeftCapWidth:16 topCapHeight:20]; }
-- (UIImage *)rightCapImage { return _rightCapImage ? _rightCapImage : [[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewRightCap"] stretchableImageWithLeftCapWidth:0 topCapHeight:20]; }
-- (UIImage *)topAnchorImage { return _topAnchorImage ? _topAnchorImage : [[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewTopAnchor"] stretchableImageWithLeftCapWidth:0 topCapHeight:33]; }
-- (UIImage *)bottomAnchorImage { return _bottomAnchorImage ? _bottomAnchorImage : [[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewBottomAnchor"] stretchableImageWithLeftCapWidth:0 topCapHeight:20]; }
-- (UIImage *)backgroundImage { return _backgroundImage ? _backgroundImage : [[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewBackground"] stretchableImageWithLeftCapWidth:0 topCapHeight:20]; }
+- (UIImage *) resizableImage:(UIImage*)image withSize:(CGSize)size
+{
+#if TARGET_OS_TV
+	return [image resizableImageWithCapInsets:UIEdgeInsetsMake(size.height, size.width, size.height, size.width)];
+#else
+	if ([self respondsToSelector:@selector(resizableImageWithCapInsets:)] )
+	{
+		return [image resizableImageWithCapInsets:UIEdgeInsetsMake(size.height, size.width, size.height, size.width)];
+	}
+	else {
+		return [image stretchableImageWithLeftCapWidth:size.width topCapHeight:size.height];
+	}
+#endif
+}
+
+- (UIImage *)leftCapImage { return _leftCapImage ? _leftCapImage : [self resizableImage:[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewLeftCap"] withSize:CGSizeMake(16, 20)]; }
+- (UIImage *)rightCapImage { return _rightCapImage ? _rightCapImage : [self resizableImage:[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewRightCap"] withSize:CGSizeMake(0, 20)]; }
+- (UIImage *)topAnchorImage { return _topAnchorImage ? _topAnchorImage : [self resizableImage:[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewTopAnchor"] withSize:CGSizeMake(0, 33)]; }
+- (UIImage *)bottomAnchorImage { return _bottomAnchorImage ? _bottomAnchorImage : [self resizableImage:[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewBottomAnchor"] withSize:CGSizeMake(0, 20)]; }
+- (UIImage *)backgroundImage { return _backgroundImage ? _backgroundImage : [self resizableImage:[SMCalloutBackgroundView embeddedImageNamed:@"SMCalloutViewBackground"] withSize:CGSizeMake(0, 20)]; }
 
 // Make sure we relayout our images when our arrow point changes!
 - (void)setArrowPoint:(CGPoint)arrowPoint {
