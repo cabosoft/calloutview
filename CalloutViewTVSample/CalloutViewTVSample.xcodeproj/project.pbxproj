@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8861D1A1D5CED41005160D8 /* MapKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8861D171D5CED41005160D8 /* MapKitController.m */; };
+		B8861D1B1D5CED41005160D8 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8861D191D5CED41005160D8 /* ScrollViewController.m */; };
+		B8861D1E1D5CF639005160D8 /* CustomMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8861D1D1D5CF639005160D8 /* CustomMapController.m */; };
+		B8E52EC41D5CE65700C64D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E52EC31D5CE65700C64D6A /* main.m */; };
+		B8E52EC71D5CE65700C64D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E52EC61D5CE65700C64D6A /* AppDelegate.m */; };
+		B8E52ED01D5CE65700C64D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52ECE1D5CE65700C64D6A /* Main.storyboard */; };
+		B8E52ED21D5CE65700C64D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E52ED11D5CE65700C64D6A /* Assets.xcassets */; };
+		B8E52EDE1D5CE6A200C64D6A /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E52EDA1D5CE6A200C64D6A /* SMCalloutView.m */; };
+		B8E52EDF1D5CE6A200C64D6A /* SMCalloutView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B8E52EDB1D5CE6A200C64D6A /* SMCalloutView.podspec */; };
+		B8E52EE01D5CE6A200C64D6A /* SMClassicCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E52EDD1D5CE6A200C64D6A /* SMClassicCalloutView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B8861D161D5CED41005160D8 /* MapKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitController.h; sourceTree = "<group>"; };
+		B8861D171D5CED41005160D8 /* MapKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitController.m; sourceTree = "<group>"; };
+		B8861D181D5CED41005160D8 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		B8861D191D5CED41005160D8 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		B8861D1C1D5CF639005160D8 /* CustomMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMapController.h; sourceTree = "<group>"; };
+		B8861D1D1D5CF639005160D8 /* CustomMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMapController.m; sourceTree = "<group>"; };
+		B8E52EBF1D5CE65700C64D6A /* CalloutViewTVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalloutViewTVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E52EC31D5CE65700C64D6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8E52EC51D5CE65700C64D6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8E52EC61D5CE65700C64D6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8E52ECF1D5CE65700C64D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8E52ED11D5CE65700C64D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8E52ED31D5CE65700C64D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E52ED91D5CE6A200C64D6A /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCalloutView.h; path = ../SMCalloutView.h; sourceTree = "<group>"; };
+		B8E52EDA1D5CE6A200C64D6A /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCalloutView.m; path = ../SMCalloutView.m; sourceTree = "<group>"; };
+		B8E52EDB1D5CE6A200C64D6A /* SMCalloutView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMCalloutView.podspec; path = ../SMCalloutView.podspec; sourceTree = "<group>"; };
+		B8E52EDC1D5CE6A200C64D6A /* SMClassicCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMClassicCalloutView.h; path = ../SMClassicCalloutView.h; sourceTree = "<group>"; };
+		B8E52EDD1D5CE6A200C64D6A /* SMClassicCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMClassicCalloutView.m; path = ../SMClassicCalloutView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8E52EBC1D5CE65700C64D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8E52EB61D5CE65700C64D6A = {
+			isa = PBXGroup;
+			children = (
+				B8E52EC11D5CE65700C64D6A /* CalloutViewTVSample */,
+				B8E52EE11D5CE6AC00C64D6A /* Callout View */,
+				B8E52EC01D5CE65700C64D6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8E52EC01D5CE65700C64D6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E52EBF1D5CE65700C64D6A /* CalloutViewTVSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8E52EC11D5CE65700C64D6A /* CalloutViewTVSample */ = {
+			isa = PBXGroup;
+			children = (
+				B8E52EC51D5CE65700C64D6A /* AppDelegate.h */,
+				B8E52EC61D5CE65700C64D6A /* AppDelegate.m */,
+				B8861D161D5CED41005160D8 /* MapKitController.h */,
+				B8861D171D5CED41005160D8 /* MapKitController.m */,
+				B8861D1C1D5CF639005160D8 /* CustomMapController.h */,
+				B8861D1D1D5CF639005160D8 /* CustomMapController.m */,
+				B8861D181D5CED41005160D8 /* ScrollViewController.h */,
+				B8861D191D5CED41005160D8 /* ScrollViewController.m */,
+				B8E52ECE1D5CE65700C64D6A /* Main.storyboard */,
+				B8E52ED11D5CE65700C64D6A /* Assets.xcassets */,
+				B8E52ED31D5CE65700C64D6A /* Info.plist */,
+				B8E52EC21D5CE65700C64D6A /* Supporting Files */,
+			);
+			path = CalloutViewTVSample;
+			sourceTree = "<group>";
+		};
+		B8E52EC21D5CE65700C64D6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8E52EC31D5CE65700C64D6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8E52EE11D5CE6AC00C64D6A /* Callout View */ = {
+			isa = PBXGroup;
+			children = (
+				B8E52ED91D5CE6A200C64D6A /* SMCalloutView.h */,
+				B8E52EDA1D5CE6A200C64D6A /* SMCalloutView.m */,
+				B8E52EDB1D5CE6A200C64D6A /* SMCalloutView.podspec */,
+				B8E52EDC1D5CE6A200C64D6A /* SMClassicCalloutView.h */,
+				B8E52EDD1D5CE6A200C64D6A /* SMClassicCalloutView.m */,
+			);
+			name = "Callout View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8E52EBE1D5CE65700C64D6A /* CalloutViewTVSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E52ED61D5CE65700C64D6A /* Build configuration list for PBXNativeTarget "CalloutViewTVSample" */;
+			buildPhases = (
+				B8E52EBB1D5CE65700C64D6A /* Sources */,
+				B8E52EBC1D5CE65700C64D6A /* Frameworks */,
+				B8E52EBD1D5CE65700C64D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalloutViewTVSample;
+			productName = CalloutViewTVSample;
+			productReference = B8E52EBF1D5CE65700C64D6A /* CalloutViewTVSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8E52EB71D5CE65700C64D6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = busybusy;
+				TargetAttributes = {
+					B8E52EBE1D5CE65700C64D6A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B8E52EBA1D5CE65700C64D6A /* Build configuration list for PBXProject "CalloutViewTVSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8E52EB61D5CE65700C64D6A;
+			productRefGroup = B8E52EC01D5CE65700C64D6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8E52EBE1D5CE65700C64D6A /* CalloutViewTVSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8E52EBD1D5CE65700C64D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E52ED21D5CE65700C64D6A /* Assets.xcassets in Resources */,
+				B8E52ED01D5CE65700C64D6A /* Main.storyboard in Resources */,
+				B8E52EDF1D5CE6A200C64D6A /* SMCalloutView.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8E52EBB1D5CE65700C64D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8861D1A1D5CED41005160D8 /* MapKitController.m in Sources */,
+				B8861D1E1D5CF639005160D8 /* CustomMapController.m in Sources */,
+				B8E52EE01D5CE6A200C64D6A /* SMClassicCalloutView.m in Sources */,
+				B8E52EDE1D5CE6A200C64D6A /* SMCalloutView.m in Sources */,
+				B8E52EC71D5CE65700C64D6A /* AppDelegate.m in Sources */,
+				B8E52EC41D5CE65700C64D6A /* main.m in Sources */,
+				B8861D1B1D5CED41005160D8 /* ScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8E52ECE1D5CE65700C64D6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8E52ECF1D5CE65700C64D6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8E52ED41D5CE65700C64D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		B8E52ED51D5CE65700C64D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8E52ED71D5CE65700C64D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CalloutViewTVSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.busybusy.CalloutViewTVSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8E52ED81D5CE65700C64D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CalloutViewTVSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.busybusy.CalloutViewTVSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8E52EBA1D5CE65700C64D6A /* Build configuration list for PBXProject "CalloutViewTVSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E52ED41D5CE65700C64D6A /* Debug */,
+				B8E52ED51D5CE65700C64D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E52ED61D5CE65700C64D6A /* Build configuration list for PBXNativeTarget "CalloutViewTVSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E52ED71D5CE65700C64D6A /* Debug */,
+				B8E52ED81D5CE65700C64D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8E52EB71D5CE65700C64D6A /* Project object */;
+}
